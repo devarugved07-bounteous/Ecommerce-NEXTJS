@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Mock Product 1",
+    "price": 29.99,
+    "description": "This is a mock product description.",
+    "category": "electronics",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Mock Product 2",
+    "price": 49.99,
+    "description": "Another mock product.",
+    "category": "jewelery",
+    "image": "https://via.placeholder.com/150"
+  }
+]

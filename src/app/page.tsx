@@ -2,6 +2,20 @@ import ProductCard from '../../components/ProductCard';
 import mockData from '../../data/mock-products.json';
 import Link from 'next/link';
 
+export interface Product {
+  id: number;
+  title: string;
+  image: string;
+  price: number;
+  description: string;
+  category: string;
+  rating?: {
+    rate: number;
+    count: number;
+  };
+}
+
+
 export default async function HomePage() {
   let products = [];
 
@@ -20,7 +34,7 @@ export default async function HomePage() {
       </div>
 
       <div className="product-grid">
-        {products.map((product: any) => (
+        {products.map((product: Product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>

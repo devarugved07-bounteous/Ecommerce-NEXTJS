@@ -1,6 +1,19 @@
 import ProductCard from '../../../components/ProductCard';
 import mockData from '../../../data/mock-products.json';
 
+export interface Product {
+  id: number;
+  title: string;
+  image: string;
+  price: number;
+  description: string;
+  category: string;
+  rating?: {
+    rate: number;
+    count: number;
+  };
+}
+
 export default async function ProductsPage() {
   let products = [];
 
@@ -16,7 +29,7 @@ export default async function ProductsPage() {
     <main style={{ padding: '2rem' }}>
       <h1>All Products</h1>
       <div className="product-grid" style={{ marginTop: '1rem' }}>
-        {products.map((product: any) => (
+        {products.map((product: Product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>

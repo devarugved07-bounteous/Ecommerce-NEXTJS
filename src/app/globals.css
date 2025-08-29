@@ -20,9 +20,7 @@ a {
   transition: color 0.3s ease;
 }
 
-a:hover {
-  color: #ff073a; /* neon red on hover */
-}
+
 
 /* Header & Footer */
 header,

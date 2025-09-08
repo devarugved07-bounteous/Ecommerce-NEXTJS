@@ -15,8 +15,10 @@
 - Added Dockerfile to containerize the app.
 - Created `.dockerignore` to optimize Docker builds.
 - Wrote Docker Compose configuration to build and run the container.
-- Tested container startup with `nerdctl compose up --build`.
+- Tested container startup with `nerdctl compose up`.
 - Adjusted styles for banner, buttons, and layout consistent with the neon theme.
 
 ---
+
+
 
